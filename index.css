@@ -5,30 +5,72 @@
 }
 
 body {
-    background: #232D36;
+    background: radial-gradient(#262a2e, #44525f);
     color: #eee;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
     max-width: 960px;
-    margin: 200px auto;
+    margin: 150px auto;
 }
 
-h1 {
+h2 {
     text-align: center;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 80px;
+    border-radius: 10px;
+    background: #ccc;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.quoteSymbol {
+    font-size: 45px;
+    max-width: 600px;
+    margin: 50px auto 0;
+    color: #0f645d;
+
 }
 
 blockquote {
     font-size: 26px;
-    margin: 30px auto;
+    margin: 0px auto 50px;
     color: #eaeaea;
     max-width: 600px;
+    font-style: italic;
+}
+
+#author {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: right;
 }
 
 button {
     display: block;
-    padding: 10px;
-    margin: 0 auto;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 50px auto;
     text-align: center;
+    border: none;
+    outline: none;
+    background: #084641;
+    color: #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    background: #0f645d;
 }
