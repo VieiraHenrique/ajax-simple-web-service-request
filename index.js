@@ -1,5 +1,6 @@
 const quote = document.getElementById('quote');
 const author = document.getElementById('author');
+const authorPic = document.querySelector('img');
 const run = document.getElementById('run');
 
 function getQuote(){
@@ -13,6 +14,7 @@ function getQuote(){
 function printQuote(data){
     quote.innerHTML = data.quote;
     author.innerHTML = data.author;
+    authorPic.src = data.photo;
 }
 
 getQuote()
